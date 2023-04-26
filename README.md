@@ -4,3 +4,5 @@ An App that aims to streamline the development and maintanence operations of loc
 1) Complaint filing/ Reporting
 2) Discussion Forums
 3) Fiscal Transparency
+
+ihatenust.
