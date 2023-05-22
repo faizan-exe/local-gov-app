@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DashboardController">
+   <children>
+      <HBox layoutX="14.0" layoutY="244.0" prefHeight="116.0" prefWidth="224.0">
+         <children>
+            <VBox prefHeight="115.0" prefWidth="150.0">
+               <children>
+                  <Text fx:id="txtName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="150.1366958618164">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="txtProfession" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="150.13672637939453">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="txtAddress" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="150.9367446899414">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="txtPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="151.73670196533203">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="txtGender" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="152.5367202758789" />
+               </children>
+            </VBox>
+            <ImageView fx:id="imgDP" fitHeight="115.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="portalComplaint" layoutX="258.0" layoutY="258.0" prefHeight="100.0" prefWidth="148.0" style="-fx-border-color: black;">
+         <padding>
+            <Insets right="12.0" />
+         </padding>
+         <children>
+            <Button fx:id="complaint_button" mnemonicParsing="false" prefHeight="26.0" prefWidth="163.0" text="File a Complaint" />
+         </children>
+      </HBox>
+      <HBox fx:id="portalForum" layoutX="422.0" layoutY="258.0" prefHeight="100.0" prefWidth="196.0" style="-fx-border-color: black;">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Public Discussion Forum" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="ucMap" layoutX="12.0" layoutY="80.0" prefHeight="150.0" prefWidth="474.0" />
+      <ImageView fitHeight="76.0" fitWidth="82.0" layoutX="519.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/local-gov.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="UCname" layoutX="115.0" layoutY="57.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.36328125" />
+      <Button fx:id="btnPersonalAdd" layoutX="22.0" layoutY="360.0" mnemonicParsing="false" text="Add Personal Info" />
+      <Button fx:id="btnPersonalView" layoutX="154.0" layoutY="360.0" mnemonicParsing="false" text="View Personal Info" />
+   </children>
+   <effect>
+      <ColorAdjust hue="0.11" />
+   </effect>
+</AnchorPane>
